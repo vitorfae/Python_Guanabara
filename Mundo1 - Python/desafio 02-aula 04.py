@@ -1,0 +1,8 @@
+print('====== DESAFIO 02 ======')
+nome = input('Qual é o seu nome? ')
+print('Seja bem vindo', nome)
+print('Informe sua data de nascimento abaixo:')
+dia = input('Dia = ')
+mes = input('Mês = ')
+ano = input('Ano = ')
+print(nome,'você nasceu no dia',dia,'de',mes,'de',ano)
