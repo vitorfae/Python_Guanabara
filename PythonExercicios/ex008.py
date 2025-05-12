@@ -1,4 +1,4 @@
 metros = float(input('Digite em metros, para saber em centimetros e em milimetros: '))
 centimetros = metros * 100
-milimetros = centimetros * 1000
-print('{} metros é igual a {} centimetros e {} milimetros.'.format(metros, centimetros, milimetros))
+milimetros = metros * 1000
+print('{} metros é igual a {:.0f} centimetros e {:.0f} milimetros.'.format(metros, centimetros, milimetros))
