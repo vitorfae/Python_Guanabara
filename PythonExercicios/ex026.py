@@ -1,0 +1,7 @@
+frase = input('Digite uma frase: ')
+quantidadeDeA = frase.lower().count('a')
+print('Tem um total de {} A nessa frase!'.format(quantidadeDeA))
+primeiraPosicao = frase.lower().find('a')
+print('A primeira posição que o A aparece é {}'.format(primeiraPosicao))
+ultimaPosicao = frase.lower().rfind('a')
+print('A última posição que o A aparece é {}'.format(ultimaPosicao))
