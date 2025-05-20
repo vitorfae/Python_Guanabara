@@ -1,0 +1,40 @@
+ Padrão ANSI
+escape sequence
+
+tudo começa com '\' e um código.
+
+Código ANSI para cores no python o melhor é o 033
+
+\033[m -> O código das cores vai entre '[' e o 'm'
+
+
+\033[0;33;44m
+desta maneira o primeiro número representa o 'STYLE' -> estilo da fonte / quando tem 0 é sem estilo nenhum
+o segundo número representa 'TEXT' -> cor do texto
+o terceiro número representa 'BACK' -> cor do fundo
+
+Códigos para STYLE(Fonte):
+0 -> None, sem STYLE
+1 -> BOLD, Negrito
+4 -> Underline, sublinhado
+7 -> Negative, cor de fundo vira da letra, cor da letra vira fundo, inverte cores
+
+Código para TEXT(Cor):
+30 -> Preto
+31 -> Vermelho
+32 -> Verde
+33 -> Amarelo
+34 -> Azul
+35 -> Roxo
+36 -> Ciano/ Verde agua
+37 -> Branco
+
+Código para BACK(fundo):
+40 -> Preto
+41 -> Vermelho
+42 -> Verde
+43 -> Amarelo
+44 -> Azul
+45 -> Roxo
+46 -> Ciano/ Verde agua
+47 -> Branco
