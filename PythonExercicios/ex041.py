@@ -2,8 +2,9 @@ from datetime import date
 
 print('Calculo de categoria segundo a Confederação Nacional de Natação')
 anoNascimento = int(input('Digite o ano do seu nascimento: '))
-anoAtual = date.today().year
+anoAtual = int(2017) #date.today().year
 idadeAtual = anoAtual - anoNascimento
+print('O atleta tem {} anos.'.format(idadeAtual))
 
 if idadeAtual <= 9:
     print('Sua categoria é MIRIM')
