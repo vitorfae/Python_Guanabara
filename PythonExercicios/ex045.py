@@ -10,6 +10,12 @@ print('1 - Pedra \n2 - Papel \n3 - Tesoura')
 print('-=-'*7)
 sleep(0.5)
 jogador = int(input('Digite sua jogada: '))
+print('JO')
+sleep(0.5)
+print('KEN')
+sleep(0.5)
+print('PO!!!')
+sleep(0.5)
 
 if jogador < 1 or jogador > 3 :
     if jogador < 1:
