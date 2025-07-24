@@ -15,6 +15,6 @@ print('Comi pra caramba')
 print('')
 
 #tras posicao e item
-for pos, comida in enumerate(lanche):
+for pos, comida in enumerate(lanche): #enumerate -> vai dar a posicao e a comida (informa os dois)
     print(f'Eu vou comer {comida} na posicao {pos}')
 print('Comi pra caramba')
