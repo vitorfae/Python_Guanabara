@@ -14,7 +14,7 @@ for pos, numero in enumerate(tupla):
 if 3 not in tupla:
     print('O valor 3 nao foi digitado em nenhuma posicao')
 
-par = () #Fica fora, senao em todas as vezes que o for for executado ele vai criar a tupla
+par = () #Fica fora, senao em todas as vezes que o 'for' for executado ele vai criar a tupla
 for c in range(0, len(tupla)):
     if tupla[c] % 2 == 0:
         par = par + (tupla[c],)
