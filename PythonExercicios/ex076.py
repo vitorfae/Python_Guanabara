@@ -8,3 +8,6 @@ print('-'*40)
 for c in range(0, len(materiaisEprecos)):
     if c % 2 == 0:
         print(f'{materiaisEprecos[c]}')
+
+
+        '''TESTE'''
