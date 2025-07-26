@@ -10,7 +10,7 @@ print(f'O valor 9 apareceu {tupla.count(9)} vezes')
 
 for pos, numero in enumerate(tupla):
     if numero == 3:
-        print(f'O valor 3 apareceu na {pos}ª posicao')
+        print(f'O valor 3 apareceu na {pos + 1}ª posicao')
 if 3 not in tupla:
     print('O valor 3 nao foi digitado em nenhuma posicao')
 
@@ -19,3 +19,24 @@ for c in range(0, len(tupla)):
     if tupla[c] % 2 == 0:
         par = par + (tupla[c],)
 print(f'Os valores pares foram: {par}')
+
+#JEITO GUANABARA
+'''
+valor1 = int(input('Digite um numero: '))
+valor2 = int(input('Digite outro numero: '))
+valor3 = int(input('Digite mais um numero: '))
+valor4 = int(input('Digite o ultimo numero: '))
+
+tupla = (valor1, valor2, valor3, valor4)
+
+print(f'Voce digitou os valores {tupla}')
+print(f'O valor 9 apareceu {tupla.count(9)} vezes')
+if 3 in tupla:
+    print(f'O valor 3 apareceu na {pos + 1}ª posicao')
+else:
+    print('O valor 3 nao foi digitado em nenhuma posicao')
+print('Os valores pares digitados foram: ', end='')
+for n in numero:
+    if n % 2 == 0:
+        print(n, end=' ')
+'''
