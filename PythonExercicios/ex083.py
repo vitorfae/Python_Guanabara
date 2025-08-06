@@ -1,3 +1,5 @@
 expressao = list()
-expressao.append(int(input('Digite uma expressao: ')))
-print(expressao.count('('))
+digitado = int(input('Digite um valor'))
+
+for c in range(0, len(digitado)):
+    print(digitado[c])
