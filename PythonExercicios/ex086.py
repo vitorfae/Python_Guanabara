@@ -12,20 +12,12 @@ print('-='*30)
 
 for c in range(0, 3):
     for l in range(0, 3):
-        print(f'[ {linha[c][l]} ]', end=' ')
+        print(f'[ {linha[c][l]:^5} ]', end=' ')
     print('')
 
 print('-='*30)
 
 print(linha)
-
-
-
-
-
-
-
-
 
 
 '''linha = list()
@@ -40,3 +32,14 @@ for l in range(0, 3):
 
 for c in range(0, 3):
     print(linha[c])'''
+
+#JEITO GUANABARA
+'''matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+for l in range(0, 3):
+    for c in range(0, 3):
+        matriz[l][c] = int(input(f'Digite um valor para [{l}, {c}]: '))
+print('-='*30)
+for l in range(0, 3):
+    for c in range(0, 3):
+        print(f'[{matriz[l][c]:^5}]', end=' ')
+    print('')'''
