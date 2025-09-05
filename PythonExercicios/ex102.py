@@ -12,7 +12,7 @@ def fatorial(numero, show=False):
         if show:
             print(f'{contador}', end=' ')
             if contador != 1 and show == True:
-                print(' x ', end=' ')
+                print('x', end=' ')
             else:
                 print('=', end=' ')
     return f

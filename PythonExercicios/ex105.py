@@ -1,4 +1,11 @@
 def notas(*valores, situacao=False):
+    """
+    -> Função para analisar notas e situações de vários alunos
+    :param valores:  uma ou mais notas dos alunos (aceita vários)
+    :param situacao: valor opcional, indicando se deve ou não adicionar a situação
+    :return: dicionário com várias informações sobre a situação da turma
+    """
+
     resultado = dict()
     #Total de notas digitadas
     totNotas = len(valores)
@@ -22,5 +29,39 @@ def notas(*valores, situacao=False):
         return  resultado
 
 
-resp = notas(5.5, 4, 4, 2, situacao=True)
+resp = notas(3.5, 10, 6.5, situacao=True)
 print(resp)
+help(notas)
+
+
+#JEITO GUANABARA
+'''def notas(*numeros, situacao=False):
+    """
+    -> Função para analisar notas e situações de vários alunos
+    :param valores:  uma ou mais notas dos alunos (aceita vários)
+    :param situacao: valor opcional, indicando se deve ou não adicionar a situação
+    :return: dicionário com várias informações sobre a situação da turma
+    """
+
+    resposta = dict()
+    resposta['total'] = len(numeros)
+    resposta['maior'] = max(numeros)
+    resposta['menor'] = min(numeros)
+    resposta['media'] = sum(numeros)/len(numeros)
+    if situacao:
+        if resposta['media'] >= 7:
+            resposta['situacao'] = 'BOA'
+        elif resposta['media'] >= 5:
+            resposta['situacao'] = 'RAZOAVEL'
+        else:
+            resposta['situacao'] = 'RUIM'
+    return resposta
+
+
+
+
+#Programa principal
+resp = notas(5.5, 2.5, 9, 8.5, situacao=True)
+print(resp)
+print(help(notas))
+'''
