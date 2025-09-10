@@ -1,5 +1,5 @@
 def aumentar(valor, porcentagem):
-    valor = valor * (1 + porcentagem / 100)
+    valor = valor + (valor * porcentagem / 100)
     return valor
 
 def diminuir(valor, porcentagem):
