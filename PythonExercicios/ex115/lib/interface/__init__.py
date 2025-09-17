@@ -5,7 +5,6 @@ def leiaInt(numero):
         except KeyboardInterrupt:
             print('\n\033[031mO usuário prefiriu não digitar esse número\033[m')
             return 0
-
         except:
             print('\033[031mERRO: por favor, digite um número inteiro válido.\033[m')
         else:
